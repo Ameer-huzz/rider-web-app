@@ -130,7 +130,19 @@
       position: relative;
       margin-bottom: 25px;
     }
+/* Hide Edge's default eye icon */
+    input::-ms-reveal {
+      display: none;
+    }
 
+    /* Hide Chrome's default eye icon */
+    input::-webkit-credentials-auto-fill-button {
+      visibility: hidden;
+      display: none !important;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+    }
     .input-group input {
       width: 100%;
       padding: 15px 50px;
@@ -348,4 +360,5 @@
 </body>
 
 </html>
+
 
