@@ -683,7 +683,24 @@ function bindAdminUI() {
   const editModal = document.getElementById("editUserModal");
   const closeEditModalBtn = document.getElementById("closeEditModal");
   const editUserForm = document.getElementById("editUserForm");
+// Toggle password visibility
+  const toggleNewPwd = document.getElementById("toggleNewPwd");
+  const createPassword = document.getElementById("createPassword");
 
+  toggleNewPwd?.addEventListener("click", () => {
+    const isPassword = createPassword.type === "password";
+    createPassword.type = isPassword ? "text" : "password";
+
+    // toggle icon class
+    const icon = toggleNewPwd.querySelector("i");
+    if (isPassword) {
+      icon.classList.remove("fa-eye");
+      icon.classList.add("fa-eye-slash");
+    } else {
+      icon.classList.remove("fa-eye-slash");
+      icon.classList.add("fa-eye");
+    }
+  });
   // ------------------
   // CREATE USER
   // ------------------
@@ -1024,5 +1041,6 @@ myAccountModal?.addEventListener("click", (e) => {
     myAccountModal.classList.add("hidden");
   }
 });
+
 
 
