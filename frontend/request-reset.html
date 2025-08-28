@@ -323,7 +323,7 @@
         requestBtn.disabled = true;
         
         try {
-          const res = await fetch("http://127.0.0.1:8000/generate-reset-token", {
+          const res = await fetch("https://rider-app-test.onrender.com/generate-reset-token", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username })
@@ -382,4 +382,5 @@
     });
   </script>
 </body>
+
 </html>
