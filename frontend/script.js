@@ -1,7 +1,7 @@
 // ================================
 // CONFIG
 // ================================
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://rider-app-test.onrender.com";
 
 // ================================
 // STATE
@@ -1024,4 +1024,5 @@ myAccountModal?.addEventListener("click", (e) => {
     myAccountModal.classList.add("hidden");
   }
 });
+
 
