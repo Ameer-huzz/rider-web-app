@@ -1,7 +1,7 @@
 // ================================
 // CONFIG
 // ================================
-const API_URL = "https://rider-app-backend.onrender.com";
+const API_URL = "https://fastapi-test-beige.vercel.app";
 
 // ================================
 // STATE
@@ -1041,6 +1041,7 @@ myAccountModal?.addEventListener("click", (e) => {
     myAccountModal.classList.add("hidden");
   }
 });
+
 
 
 
