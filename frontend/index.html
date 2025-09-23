@@ -331,7 +331,7 @@
           formData.append("username", document.getElementById("username").value);
           formData.append("password", passwordInput.value);
 
-          const res = await fetch("https://rider-app-test.onrender.com/login", {
+          const res = await fetch("https://fastapi-test-beige.vercel.app/login", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: formData
@@ -360,5 +360,6 @@
 </body>
 
 </html>
+
 
 
