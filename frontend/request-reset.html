@@ -323,7 +323,7 @@
         requestBtn.disabled = true;
         
         try {
-          const res = await fetch("https://fastapi-test-beige.vercel.app/generate-reset-token", {
+          const res = await fetch("https://rider-backend-prod.vercel.app/generate-reset-token", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ username })
@@ -384,5 +384,6 @@
 </body>
 
 </html>
+
 
 
