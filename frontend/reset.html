@@ -346,7 +346,7 @@
         resetBtn.disabled = true;
 
         try {
-          const res = await fetch("https://fastapi-test-beige.vercel.app/reset-password", {
+          const res = await fetch("https://rider-backend-prod.vercel.app/reset-password", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ token, new_password: newPassword })
@@ -382,4 +382,5 @@
 
 
 </html>
+
 
