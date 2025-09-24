@@ -787,7 +787,7 @@ function bindAdminUI() {
     if (confirm(`Delete user "${username}"?`)) {
       try {
         const token = getToken();
-        const res = await fetch(`${API_URL}/admin/delete-user/${encodeURIComponent(username)}`, {
+        const res = await fetch(`${API_URL}/admin/delete-user?username=${encodeURIComponent(username)}`, {
           method: "DELETE",
           headers: { Authorization: `Bearer ${token}` },
         });
@@ -1041,6 +1041,7 @@ myAccountModal?.addEventListener("click", (e) => {
     myAccountModal.classList.add("hidden");
   }
 });
+
 
 
 
